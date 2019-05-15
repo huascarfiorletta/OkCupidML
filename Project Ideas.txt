@@ -4,5 +4,9 @@ feed label as feature to check you can achieve 100%
 https://towardsdatascience.com/understand-how-your-tensorflow-model-is-making-predictions-d0b3c7e88500
 
 Learning to Rank
-#convert user to embedding
+
+
 #similarity based on question columns answered equally excluding  (pick a subset of questions where same answer is good, i.e. exclude complementary questions), use remaining questions as input features
+#convert user to embedding
+
+#
