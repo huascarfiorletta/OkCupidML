@@ -27,7 +27,7 @@ class OneHotDataProvider:
         self.UserMetrics = UserMetrics(self.prob_data)
         self.one_hot = pd.read_pickle("/Users/huascar/workspace/Jupyter/OkCupidData/one_hot.bz2")
 
-    def get_trianing_data(self, samples):
+    def get_training_data(self, samples):
         X = [[],[]]
         Y = []
         with tqdm(total=samples) as pbar:
@@ -42,7 +42,7 @@ class OneHotDataProvider:
                 X[1].append(user_2_data)
                 Y.append(similarity)
                 pbar.update(1)
-        return X, Y
+        return [np.array(X[0]),np.array(X[1])], np.array(Y)
 
     def sample_compatible_pair(self):
         while True:
